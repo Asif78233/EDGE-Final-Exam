@@ -7,7 +7,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, r2_score
 
-oil_data = pd.read_csv(r'E:\Asif\PetroleumPrices.csv')
+p_oil_data = pd.read_csv(r'E:\Asif\PetroleumPrices.csv')
 
 
 p_oil_data['Date'] = pd.to_datetime(p_oil_data['Date'], format='%d-%b-%y', errors='coerce')
